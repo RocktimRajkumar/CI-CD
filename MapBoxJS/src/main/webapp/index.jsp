@@ -31,7 +31,7 @@
             top:4px;
             margin:0px;
             left:42%;
-            z-index:1;
+            z-index:1; 
             color:#c1c1c1;
         }
     </style>
