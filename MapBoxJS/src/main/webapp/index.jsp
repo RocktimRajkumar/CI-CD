@@ -32,7 +32,7 @@
             margin:0px;
             left:42%;
             z-index:1; 
-            color:#c1c1c3;
+            color:#c1c1c4;
         }
     </style>
 </head>
