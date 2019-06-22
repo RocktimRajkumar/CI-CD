@@ -24,7 +24,7 @@
         #reset{
             position:absolute;
             left:50%;
-            bottom:10px;
+            bottom:12px;
         }
         #heading{
             position: absolute;
