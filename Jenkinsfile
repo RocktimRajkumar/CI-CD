@@ -6,7 +6,7 @@ pipeline{
 		stage ('Compile Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					bat 'mvn -f MapBoxJS/pom.xml clean compile'
+					bat 'mvn clean compile'
 				}
 			}
 		}
@@ -14,7 +14,7 @@ pipeline{
 		stage ('Testing Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					bat 'mvn -f MapBoxJS/pom.xml test'
+					bat 'mvn test'
 				}
 			}
 		}
@@ -22,7 +22,7 @@ pipeline{
 		stage ('Deployment Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					bat 'mvn -f MapBoxJS/pom.xml deploy'
+					bat 'mvn deploy'
 				}
 			}
 		}
