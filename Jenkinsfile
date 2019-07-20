@@ -6,7 +6,7 @@ pipeline{
 		stage ('Compile Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					bat 'mvn clean compile'
+					ssh 'mvn clean compile'
 				}
 			}
 		}
@@ -14,7 +14,7 @@ pipeline{
 		stage ('Testing Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					bat 'mvn test'
+					ssh 'mvn test'
 				}
 			}
 		}
