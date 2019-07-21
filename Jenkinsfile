@@ -22,13 +22,10 @@ pipeline{
 		stage ('Deployment Stage'){
 			steps{
 				withMaven(maven : 'maven_3.6.0'){
-					echo "Ready to Go !"
+					echo "welcome to my project"
 				}
 			}
 		}
 		
 	}
-}
-{
-welcome to my project
 }
