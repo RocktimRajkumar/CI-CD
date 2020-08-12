@@ -21,24 +21,28 @@
             bottom: 0;
             width: 100%;
         }
-        #reset{
-            position:absolute;
-            left:50%;
-            bottom:12px;
-        }
-        #heading{
+
+        #reset {
             position: absolute;
-            top:4px;
-            margin:0px;
-            left:42%;
-            z-index:1; 
-            color:#c1c2c2;
+            left: 50%;
+            bottom: 12px;
+        }
+
+        #heading {
+            position: absolute;
+            top: 4px;
+            margin: 0px;
+            left: 42%;
+            z-index: 1;
+            color: #c1c2c2;
         }
     </style>
 </head>
 
 <body>
-    <h2 id="heading"> Jorhat 785001, Assam, India</h2>
+    <p>MapBox JS</p>
+    <h3 id="heading"> Jorhat 785001, Assam, India</h3>
+    <span>This is Mapbox</span>
     <div id="map">
 
     </div>
@@ -87,7 +91,7 @@
         };
     }
 
-    var resetbtn=document.getElementById("reset");
+    var resetbtn = document.getElementById("reset");
 
     map.on('load', function () {
 
@@ -108,7 +112,7 @@
         });
 
         //Reset button when press shows all coordinates
-        resetbtn.addEventListener("click",function(){
+        resetbtn.addEventListener("click", function () {
             coordinates = OriginalCoordinates;
         });
 
