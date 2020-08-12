@@ -40,6 +40,7 @@
 </head>
 
 <body>
+    <p>MapBox JS</p>
     <h3 id="heading"> Jorhat 785001, Assam, India</h3>
     <span>This is Mapbox</span>
     <div id="map">
