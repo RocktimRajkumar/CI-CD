@@ -38,7 +38,7 @@
 </head>
 
 <body>
-    <h2 id="heading"> Jorhat 785001, Assam, India</h2>
+    <h3 id="heading"> Jorhat 785001, Assam, India</h3>
     <div id="map">
 
     </div>
